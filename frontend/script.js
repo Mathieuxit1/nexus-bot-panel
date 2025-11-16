@@ -35,7 +35,7 @@ document.getElementById("announce-btn").addEventListener("click", async () => {
   if (!message) return;
 
   try {
-    const res = await fetch("https://TON_BACKEND_URL/send-message", {
+    const res = await fetch("https://nexus-bot-panel.onrender.com/send-message", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ content: message })
