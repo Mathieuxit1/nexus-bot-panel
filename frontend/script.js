@@ -18,7 +18,7 @@ document.getElementById("login-btn").addEventListener("click", () => {
   loader.classList.remove("hidden");
 
   setTimeout(() => {
-    loader.classList.add("hidden");
+    loader.classList.add("");
 
     const clientId = "1382943232966529064";
     const redirectUri = "https://site-peach-omega.vercel.app/callback";
