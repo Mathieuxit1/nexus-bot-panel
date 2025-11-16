@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Administrateur - NexusBot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Panel Administrateur</h1>
+    <p class="subtitle">Bienvenue sur le panel de gestion de NexusBot</p>
+
+    <div class="card">
+      <h2>Connexion</h2>
+      <p>Connecte-toi avec Discord pour accéder aux outils administrateur.</p>
+      <button id="login-btn">Se connecter avec Discord</button>
+    </div>
+
+    <div id="user-info" class="hidden">
+      <p id="welcome-message"></p>
+      <img id="user-avatar" width="64" style="border-radius: 50px;" />
+    </div>
+
+    <div id="loader" class="hidden">Chargement...</div>
+
+    <div class="card hidden" id="admin-tools">
+      <h2>Outils Administrateur</h2>
+      <button class="tool-btn">📊 Voir les stats du serveur</button>
+      <button class="tool-btn">📝 Voir les warns</button>
+      <button class="tool-btn">🎫 Voir les tickets</button>
+      <button class="tool-btn" id="announce-btn">⚠️ Envoyer un message d’annonce</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
