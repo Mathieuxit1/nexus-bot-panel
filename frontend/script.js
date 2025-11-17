@@ -21,7 +21,7 @@ document.getElementById("login-btn").addEventListener("click", () => {
     loader.classList.add("hidden");
 
     const clientId = "1382943232966529064";
-    const redirectUri = "https://nexus-bot-panel-ashen.vercel.com/callback";
+    const redirectUri = "https://nexus-bot-panel-ashen.vercel.app/callback";
     const scope = "identify";
     const responseType = "code";
 
@@ -42,7 +42,7 @@ document.getElementById("announce-btn").addEventListener("click", async () => {
     });
 
     const text = await res.text();
-    alert(text);
+    alert(`✅ Réponse du serveur : ${text}`);
   } catch (err) {
     alert("❌ Erreur lors de l’envoi du message.");
     console.error(err);
