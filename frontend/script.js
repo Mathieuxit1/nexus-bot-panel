@@ -21,7 +21,7 @@ document.getElementById("login-btn").addEventListener("click", () => {
     loader.classList.add("hidden");
 
     const clientId = "1382943232966529064";
-    const redirectUri = "https://nexus-bot-panel.onrender.com/callback";
+    const redirectUri = "https://nexus-bot-panel-ashen.vercel.com/callback";
     const scope = "identify";
     const responseType = "code";
 
